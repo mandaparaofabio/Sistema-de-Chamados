@@ -43,10 +43,25 @@ public class ChamadoTest {
          }
         
         
+    
+
+int tamanho = chamTest.getChamados().size();
+ chamTest.put(ch);
+  if (achou){
+      assertEquals (tamanho, chamTest.getChamados().size());
+     
+  }else{
+      assertEquals(ch,chamTest.getChamados().size());
+  }
+ 
     }
 
-    private void ChamadoDAO() {
+    private void assertEquals(int tamanho, int size) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
+    private void assertEquals(Chamado ch, int size) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
